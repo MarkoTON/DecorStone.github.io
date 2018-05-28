@@ -1,0 +1,319 @@
+body {
+  box-sizing: border-box;
+  background: url("../images/bg-info.jpg") no-repeat;
+  background-size: cover;
+  font-family: 'Lato',Verdana, Geneva, sans-serif;
+  -webkit-font-family: sans-serif !important;
+  -moz-font-family: sans-serif !important; }
+
+/*=========  Navbar  =============*/
+.navbar {
+  background: url("../images/nav_bg4.png"); }
+  .navbar .nav-link {
+    transition: .4s ease; }
+    .navbar .nav-link a {
+      font-family: 'Lato',Verdana, Geneva, sans-serif;
+      -webkit-font-family: sans-serif !important;
+      -moz-font-family: sans-serif !important; }
+  .navbar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2); }
+  .navbar .dropdown-menu {
+    background: url(../images/nav_bg4.png);
+    margin-top: 15px;
+    border-radius: 0;
+    border: 1px solid #fff; }
+    .navbar .dropdown-menu .dropdown-item {
+      color: #fff;
+      transition: 0.4s; }
+    .navbar .dropdown-menu .dropdown-item:hover {
+      color: #000; }
+    .navbar .dropdown-menu .dropdown-item.active, .navbar .dropdown-menu .dropdown-item:active {
+      background: rgba(0, 0, 0, 0.5); }
+
+/*=========  Slider  =============*/
+#carousel .carousel, #beton .carousel {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-family: 'Oswald', sans-serif;
+  -moz-font-family: 'Oswald', Sans-serif; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    /* bottom: 20px; */
+    z-index: 10;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    color: #fff;
+    width: 50%;
+    text-align: right; }
+    #carousel .carousel .carousel-caption h1, #beton .carousel .carousel-caption h1 {
+      color: white;
+      text-shadow: 2px 2px 2px #000;
+      font-weight: 400;
+      font-size: 4rem; }
+    #carousel .carousel .carousel-caption h3, #beton .carousel .carousel-caption h3 {
+      color: red;
+      text-shadow: 2px 2px 2px #fff;
+      font-weight: 400;
+      font-size: 4rem; }
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next, #beton .carousel .carousel-control-prev, #beton .carousel .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin-top: -75px;
+    bottom: 0;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 5px solid darkred;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5; }
+  #carousel .carousel .carousel-control-next, #beton .carousel .carousel-control-next {
+    margin-right: 15px; }
+
+/*=========  Beton  =============*/
+#beton .carousel .carousel-control-prev {
+  position: absolute;
+  top: 55%;
+  height: 6rem;
+  width: 6rem;
+  margin-top: -75px;
+  bottom: 0;
+  margin-left: 10px;
+  border-radius: 50% 0% 0% 50%;
+  border: 3px solid red;
+  background: darkred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5; }
+
+#beton .carousel .carousel-control-next {
+  position: absolute;
+  top: 55%;
+  height: 6rem;
+  width: 6rem;
+  margin-top: -75px;
+  margin-right: 10px;
+  bottom: 0;
+  border-radius: 0% 50% 50% 0%;
+  border: 3px solid red;
+  background: darkred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5; }
+
+/*=========  Card  =============*/
+.card {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 20px black;
+  border: 2px solid rgba(0, 0, 0, 0.65); }
+  .card .card-header {
+    background: url(../images/architect.jpg) 50% 72% no-repeat;
+    background-size: 100%;
+    height: 120px; }
+    .card .card-header h1 {
+      box-shadow: inset 63px 10px 215px -11px antiquewhite;
+      padding: 5px 10px; }
+  .card .card-header:first-child {
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.65); }
+  .card .card-body .logo-kontakt img {
+    border: none;
+    background: rgba(255, 255, 255, 0.65); }
+  .card .card-body h6 {
+    background: rgba(255, 255, 255, 0.65); }
+  .card .card-body h2 {
+    display: inline-block;
+    text-shadow: 1px 1px 1px grey;
+    padding: 0 2px 5px 2px;
+    border-bottom: 5px solid red; }
+  .card .card-body img {
+    border: 3px solid rgba(255, 255, 255, 0.5); }
+  .card p {
+    font-weight: 450; }
+  .card .lead {
+    font-weight: 450; }
+
+/*=========  Beton  =============*/
+#beton section {
+  width: 100%; }
+
+/*=========  Dekoracije  =============*/
+#dekoracije .card-body img {
+  width: 100%;
+  height: 165px; }
+
+#dekoracije .nav-tabs {
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  text-shadow: 0px 0px 2px grey; }
+  #dekoracije .nav-tabs a {
+    color: rgba(0, 0, 0, 0.7); }
+
+/*=========  Galerija  =============*/
+#galerija a img {
+  width: 100%;
+  height: 160px; }
+
+/*=========  reference  =============*/
+#reference .card-body img {
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 40px; }
+
+/*=========  Kontakt  =============*/
+.bg-num {
+  background: rgba(255, 255, 255, 0.5); }
+
+/*=========  Footer  =============*/
+footer {
+  border-top: 3px solid black;
+  color: #fff;
+  background: url("../images/footer_bg2.png");
+  text-shadow: 1px 1px 2px black; }
+  footer .fa-facebook-square:before {
+    content: "\f082";
+    color: #3b5998; }
+  footer .mail-deco a {
+    color: yellowgreen;
+    padding: 5px;
+    transition: 0.4s ease-in; }
+  footer .mail-deco a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5); }
+  footer .right-copy {
+    border-top: 1px solid #fff; }
+
+/*=========  Media  =============*/
+@media (min-width: 320px) {
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next {
+    top: 85%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 3px solid darkred; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    left: 10%;
+    top: 16%; }
+  .carousel-indicators {
+    margin: 0 auto;
+    width: 50%; }
+  #carousel .carousel .carousel-caption h3, #beton .carousel .carousel-caption h3 {
+    font-size: 1.2rem; }
+  #carousel .carousel .carousel-caption h1, #beton .carousel .carousel-caption h1 {
+    font-size: 1.2rem; }
+  #beton .carousel {
+    display: none; }
+  #galerija #carouselExampleIndicators {
+    display: none; }
+  iframe {
+    height: 50%; }
+  .info-kontakt .offset-2 {
+    margin-left: 0; } }
+
+@media (min-width: 512px) {
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next {
+    top: 75%; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    left: 10%;
+    top: 16%; }
+  .carousel-indicators {
+    margin: 0 auto;
+    width: 50%; }
+  #carousel .carousel .carousel-caption h3, #beton .carousel .carousel-caption h3 {
+    font-size: 2rem; }
+  #carousel .carousel .carousel-caption h1, #beton .carousel .carousel-caption h1 {
+    font-size: 2rem; }
+  #beton .carousel {
+    display: block; }
+  #beton .carousel .carousel-control-prev, #beton .carousel .carousel-control-next {
+    top: 75%;
+    height: 3rem;
+    width: 3rem; }
+  #galerija #carouselExampleIndicators {
+    display: block; } }
+
+@media (min-width: 768px) {
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next {
+    height: 4rem;
+    width: 4rem;
+    top: 65%; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    left: 5%;
+    top: 16%; }
+  .carousel-indicators {
+    margin: 0 auto;
+    width: 50%; }
+  #carousel .carousel .carousel-caption h3, #beton .carousel .carousel-caption h3 {
+    font-size: 3rem; }
+  #carousel .carousel .carousel-caption h1, #beton .carousel .carousel-caption h1 {
+    font-size: 3rem; }
+  #beton .carousel .carousel-control-prev, #beton .carousel .carousel-control-next {
+    top: 70%;
+    height: 3rem;
+    width: 3rem; }
+  #dekoracije .card-body img {
+    height: 125px; }
+  #galerija a img {
+    height: 130px; }
+  iframe {
+    height: 300px; }
+  .info-kontakt .offset-2 {
+    margin-left: 0; } }
+
+@media (min-width: 1024px) {
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next {
+    height: 5rem;
+    width: 5rem;
+    top: 55%;
+    border: 5px solid darkred; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    left: 0%;
+    top: 30%; }
+  #beton .carousel .carousel-control-prev, #beton .carousel .carousel-control-next {
+    top: 55%;
+    height: 5rem;
+    width: 5rem; }
+  iframe {
+    height: 300px; }
+  .info-kontakt .offset-2 {
+    margin-left: 16.66667%; } }
+
+@media (min-width: 1200px) {
+  #carousel .carousel .carousel-control-prev, #carousel .carousel .carousel-control-next {
+    height: 6rem;
+    width: 6rem;
+    top: 55%;
+    border: 5px solid darkred; }
+  #carousel .carousel .carousel-caption, #beton .carousel .carousel-caption {
+    left: 0%;
+    top: 30%; }
+  #beton .carousel .carousel-control-prev, #beton .carousel .carousel-control-next {
+    top: 57%;
+    height: 6rem;
+    width: 6rem; }
+  .carousel-indicators {
+    width: 100%; }
+  #carousel .carousel .carousel-caption h3, #beton .carousel .carousel-caption h3 {
+    font-size: 4rem; }
+  #carousel .carousel .carousel-caption h1, #beton .carousel .carousel-caption h1 {
+    font-size: 4rem; }
+  #galerija a img {
+    height: 160px; }
+  #dekoracije .card-body img {
+    height: 160px; }
+  iframe {
+    height: 400px; } }
